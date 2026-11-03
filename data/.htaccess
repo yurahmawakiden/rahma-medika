@@ -1,0 +1,3 @@
+# Blokir semua akses peramban langsung ke file data JSON
+Require all denied
+

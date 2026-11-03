@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+  <defs>
+    <linearGradient id="asamBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#fef9c3"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" rx="20" fill="url(#asamBg)"/>
+  <circle cx="160" cy="105" r="64" fill="#ffffff" opacity="0.85" stroke="#bae6fd" stroke-width="4"/>
+  <!-- Tabung Sampel Medis -->
+  <rect x="128" y="68" width="64" height="86" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="3"/>
+  <path d="M131 106 L189 106 L189 144 Q189 151 182 151 L138 151 Q131 151 131 144 Z" fill="#facc15"/>
+  <rect x="122" y="54" width="76" height="16" rx="5" fill="#38bdf8" stroke="#0284c7" stroke-width="3"/>
+  <line x1="140" y1="88" x2="156" y2="88" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="140" y1="120" x2="156" y2="120" stroke="#ca8a04" stroke-width="3" stroke-linecap="round"/>
+  <text x="160" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0369a1">PATH 4 • CEK ASAM URAT</text>
+</svg>
+

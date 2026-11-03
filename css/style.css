@@ -1,0 +1,418 @@
+/* css/style.css - Gaya Visual Etalase Publik Rahma Medika (Tema Pastel Medis Interaktif) */
+:root {
+  --pastel-blue-bg: #f0f9ff;
+  --pastel-blue-card: #e0f2fe;
+  --pastel-blue-border: #7dd3fc;
+  --primary-blue: #0284c7;
+  --primary-blue-dark: #0369a1;
+  --pastel-purple-bg: #faf5ff;
+  --pastel-purple-card: #f3e8ff;
+  --pastel-purple-border: #c084fc;
+  --purple-accent: #7e22ce;
+  --pastel-yellow-bg: #fffbeb;
+  --pastel-yellow-card: #fef3c7;
+  --pastel-yellow-border: #fbbf24;
+  --yellow-accent: #b45309;
+  --pastel-green-bg: #f0fdf4;
+  --pastel-green-card: #dcfce7;
+  --pastel-green-border: #4ade80;
+  --green-accent: #15803d;
+  --text-dark: #0f172a;
+  --text-muted: #475569;
+  --surface-white: #ffffff;
+  --shadow-soft: 0 10px 25px -5px rgba(2, 132, 199, 0.08), 0 8px 10px -6px rgba(2, 132, 199, 0.05);
+  --shadow-hover: 0 20px 25px -5px rgba(2, 132, 199, 0.14), 0 8px 10px -6px rgba(2, 132, 199, 0.08);
+  --radius-lg: 18px;
+  --radius-md: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(180deg, #f0f9ff 0%, #faf5ff 50%, #f8fafc 100%);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar-medika {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--pastel-blue-card);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  box-shadow: 0 4px 15px rgba(2, 132, 199, 0.06);
+}
+
+.brand-title {
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--primary-blue-dark);
+  letter-spacing: -0.02em;
+}
+
+.nav-link-medika {
+  color: var(--text-dark) !important;
+  font-weight: 600;
+  padding: 0.5rem 1.1rem !important;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.nav-link-medika:hover,
+.nav-link-medika.active {
+  background-color: var(--pastel-blue-card);
+  color: var(--primary-blue-dark) !important;
+}
+
+.btn-keranjang-header {
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.55rem 1.2rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-keranjang-header:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35);
+  color: #fff;
+}
+
+/* Hero Section */
+.hero-medika {
+  padding: 4rem 0 3rem;
+  position: relative;
+}
+
+.hero-card {
+  background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 65%, #f3e8ff 100%);
+  border: 2px solid var(--pastel-blue-border);
+  border-radius: 26px;
+  padding: 3rem 2.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Flowchart Badge Styles (Sesuai Keterangan Simbol di Gambar Flowchart) */
+.simbol-terminator {
+  background: linear-gradient(180deg, #bae6fd 0%, #7dd3fc 100%);
+  border: 2px solid #0284c7;
+  color: #0c4a6e;
+  border-radius: 999px;
+  padding: 0.35rem 1.1rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.simbol-input {
+  background: var(--pastel-purple-card);
+  border: 2px solid var(--pastel-purple-border);
+  color: #581c87;
+  border-radius: 14px;
+  padding: 1.25rem;
+}
+
+.simbol-proses {
+  background: var(--pastel-blue-card);
+  border: 2px solid var(--pastel-blue-border);
+  color: #0c4a6e;
+  border-radius: 14px;
+  padding: 1.25rem;
+}
+
+.simbol-decision {
+  background: var(--pastel-yellow-card);
+  border: 2px solid var(--pastel-yellow-border);
+  color: #78350f;
+  border-radius: 16px;
+  padding: 1.25rem;
+}
+
+.simbol-selesai {
+  background: linear-gradient(180deg, #bbf7d0 0%, #4ade80 100%);
+  border: 2px solid #16a34a;
+  color: #064e3b;
+  border-radius: 999px;
+  padding: 0.45rem 1.35rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Stepper Alur Layanan Medis (Flowchart 2) */
+.alur-stepper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.step-box {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.step-box.active {
+  border-color: var(--primary-blue);
+  background: var(--pastel-blue-bg);
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.14);
+}
+
+.step-box .step-num {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--pastel-blue-card);
+  color: var(--primary-blue-dark);
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.step-box.active .step-num {
+  background: var(--primary-blue);
+  color: #fff;
+}
+
+/* Path Quick Buttons (Path 1 - Path 6) */
+.path-pill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  gap: 0.75rem;
+}
+
+.btn-path-card {
+  background: #ffffff;
+  border: 2px solid var(--pastel-blue-border);
+  border-radius: 14px;
+  padding: 0.85rem 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-path-card:hover {
+  background: var(--pastel-blue-bg);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-soft);
+  border-color: var(--primary-blue);
+}
+
+.badge-path {
+  background: linear-gradient(180deg, #bae6fd 0%, #7dd3fc 100%);
+  color: #0369a1;
+  border: 1px solid #38bdf8;
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+}
+
+/* Kartu Katalog Layanan / Produk */
+.card-layanan {
+  background: var(--surface-white);
+  border: 2px solid #e0f2fe;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-soft);
+}
+
+.card-layanan:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--pastel-blue-border);
+}
+
+.card-layanan-img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  background: var(--pastel-blue-bg);
+  border-bottom: 1px solid #e0f2fe;
+}
+
+.card-layanan-body {
+  padding: 1.35rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-input-req {
+  background: var(--pastel-purple-card);
+  color: var(--purple-accent);
+  border: 1px solid var(--pastel-purple-border);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 0.65rem;
+}
+
+.badge-input-direct {
+  background: var(--pastel-green-card);
+  color: var(--green-accent);
+  border: 1px solid var(--pastel-green-border);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 0.65rem;
+}
+
+/* Filter Kategori Buttons */
+.btn-filter-kategori {
+  border: 2px solid var(--pastel-blue-border);
+  background: #fff;
+  color: var(--primary-blue-dark);
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.45rem 1.15rem;
+  transition: all 0.2s ease;
+}
+
+.btn-filter-kategori:hover,
+.btn-filter-kategori.active {
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: #fff;
+}
+
+/* Keranjang & Panel Transaksi */
+.keranjang-panel {
+  background: #ffffff;
+  border: 2px solid var(--pastel-blue-border);
+  border-radius: 22px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.item-keranjang-row {
+  background: var(--pastel-blue-bg);
+  border: 1px solid var(--pastel-blue-border);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.detail-medis-chip {
+  background: var(--pastel-purple-card);
+  color: #581c87;
+  border: 1px solid var(--pastel-purple-border);
+  border-radius: 8px;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.82rem;
+  margin-top: 0.45rem;
+  display: inline-block;
+}
+
+/* Sosial Media Interaktif (Flowchart 1) */
+.sosmed-btn {
+  border: 2px solid #e2e8f0;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: left;
+}
+
+.sosmed-btn:hover,
+.sosmed-btn.active {
+  border-color: var(--pastel-purple-border);
+  background: var(--pastel-purple-bg);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.sosmed-display-card {
+  background: linear-gradient(135deg, #f3e8ff 0%, #e0f2fe 100%);
+  border: 2px solid var(--pastel-purple-border);
+  border-radius: 18px;
+  padding: 1.5rem;
+}
+
+/* Modal Input Khusus Path 1, 5, 6 */
+.modal-backdrop-custom {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-card-custom {
+  background: #ffffff;
+  border: 3px solid var(--pastel-purple-border);
+  border-radius: 22px;
+  max-width: 520px;
+  width: 100%;
+  padding: 1.75rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 3rem 0 2rem;
+  margin-top: 4rem;
+}
+

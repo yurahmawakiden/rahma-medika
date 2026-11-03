@@ -1,0 +1,72 @@
+/* admin/css/admin.css - Gaya Visual Panel Admin Rahma Medika */
+:root {
+  --admin-bg: #f1f5f9;
+  --admin-sidebar: #0f172a;
+  --admin-primary: #0284c7;
+  --admin-primary-soft: #e0f2fe;
+  --admin-purple-soft: #f3e8ff;
+  --admin-green-soft: #dcfce7;
+  --admin-yellow-soft: #fef3c7;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--admin-bg);
+  color: #0f172a;
+}
+
+.admin-navbar {
+  background: linear-gradient(135deg, #0369a1 0%, #0f172a 100%);
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.12);
+}
+
+.admin-nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.45rem 1rem !important;
+  transition: all 0.2s ease;
+}
+
+.admin-nav-link:hover,
+.admin-nav-link.active {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff !important;
+}
+
+.stat-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  padding: 1.4rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+  height: 100%;
+}
+
+.content-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f3e8ff 50%, #f0fdf4 100%);
+  padding: 1.5rem;
+}
+
+.login-card {
+  background: #ffffff;
+  border: 2px solid #bae6fd;
+  border-radius: 22px;
+  max-width: 430px;
+  width: 100%;
+  padding: 2.25rem;
+  box-shadow: 0 20px 35px -10px rgba(2, 132, 199, 0.15);
+}
+

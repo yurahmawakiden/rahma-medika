@@ -1,0 +1,140 @@
+{
+  "site": {
+    "nama": "Rahma Medika",
+    "tagline": "Klinik Pratama & Layanan Homecare Medis Terpercaya",
+    "email": "layanan@rahma-medika.test",
+    "telepon": "6281234567890",
+    "alamat": "Jl. Kesehatan Raya No. 18, Makassar, Sulawesi Selatan",
+    "jam_operasional": "Senin - Minggu (08.00 - 21.00 WITA)",
+    "sosmed": {
+      "instagram": {
+        "nama": "@rahmamedika.id",
+        "url": "https://instagram.com/rahmamedika.id",
+        "followers": "12.4K Pengikut",
+        "bio": "Edukasi Kesehatan Harian, Info Homecare Infus, Rawat Luka & Cek Lab Cepat."
+      },
+      "facebook": {
+        "nama": "Klinik Rahma Medika Official",
+        "url": "https://facebook.com/rahmamedika.official",
+        "followers": "8.9K Pengikut",
+        "bio": "Komunitas Pasien & Informasi Jadwal Layanan Kesehatan Masyarakat Rahma Medika."
+      },
+      "tiktok": {
+        "nama": "@rahmamedika.care",
+        "url": "https://tiktok.com/@rahmamedika.care",
+        "followers": "25.1K Pengikut",
+        "bio": "Video Singkat Tips Kesehatan, Cara Rawat Luka Steril & Cek Tanda Vital."
+      }
+    }
+  },
+  "menu": [
+    { "id": "beranda", "label": "Beranda" },
+    { "id": "layanan", "label": "Layanan" },
+    { "id": "kontak", "label": "Kontak" }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "slug": "tindakan-infus",
+      "path": "Path 1",
+      "nama": "Tindakan Infus",
+      "asal": "Terapi Cairan & Booster",
+      "kategori": "tindakan-medis",
+      "harga": 120000,
+      "biaya_jasa": 30000,
+      "stok": 25,
+      "butuh_input": true,
+      "jenis_input": "infus",
+      "label_input": "Input: Jenis Cairan, Riwayat Penyakit",
+      "deskripsi": "Layanan pemasangan infus cairan rehidrasi atau multivitamin oleh tenaga medis berpengalaman. Wajib mengisi jenis cairan infus dan riwayat penyakit pasien.",
+      "img": "img/tindakan-infus.svg",
+      "alt": "Tindakan Infus Rahma Medika"
+    },
+    {
+      "id": 2,
+      "slug": "cek-gula-darah",
+      "path": "Path 2",
+      "nama": "Cek Gula Darah",
+      "asal": "Pemeriksaan Lab Cepat",
+      "kategori": "cek-lab",
+      "harga": 25000,
+      "biaya_jasa": 10000,
+      "stok": 50,
+      "butuh_input": false,
+      "jenis_input": "none",
+      "label_input": "Langsung Tindakan Pemeriksaan",
+      "deskripsi": "Pemeriksaan kadar glukosa darah sewaktu atau puasa (GDS/GDP) menggunakan alat glukometer digital akurat dan jarum lancet steril sekali pakai.",
+      "img": "img/cek-gula-darah.svg",
+      "alt": "Cek Gula Darah Rahma Medika"
+    },
+    {
+      "id": 3,
+      "slug": "cek-kolesterol",
+      "path": "Path 3",
+      "nama": "Cek Kolesterol",
+      "asal": "Pemeriksaan Lab Cepat",
+      "kategori": "cek-lab",
+      "harga": 45000,
+      "biaya_jasa": 10000,
+      "stok": 40,
+      "butuh_input": false,
+      "jenis_input": "none",
+      "label_input": "Langsung Tindakan Pemeriksaan",
+      "deskripsi": "Pemeriksaan kadar kolesterol total dalam darah secara cepat untuk memantau profil lipid dan pencegahan dini risiko kardiovaskular.",
+      "img": "img/cek-kolesterol.svg",
+      "alt": "Cek Kolesterol Rahma Medika"
+    },
+    {
+      "id": 4,
+      "slug": "cek-asam-urat",
+      "path": "Path 4",
+      "nama": "Cek Asam Urat",
+      "asal": "Pemeriksaan Lab Cepat",
+      "kategori": "cek-lab",
+      "harga": 30000,
+      "biaya_jasa": 10000,
+      "stok": 45,
+      "butuh_input": false,
+      "jenis_input": "none",
+      "label_input": "Langsung Tindakan Pemeriksaan",
+      "deskripsi": "Pemeriksaan kadar asam urat darah untuk mendeteksi hiperurisemia dan memantau kesehatan persendian secara berkala.",
+      "img": "img/cek-asam-urat.svg",
+      "alt": "Cek Asam Urat Rahma Medika"
+    },
+    {
+      "id": 5,
+      "slug": "tindakan-rawat-luka",
+      "path": "Path 5",
+      "nama": "Tindakan Rawat Luka",
+      "asal": "Perawatan Luka Modern",
+      "kategori": "tindakan-medis",
+      "harga": 85000,
+      "biaya_jasa": 25000,
+      "stok": 30,
+      "butuh_input": true,
+      "jenis_input": "rawat_luka",
+      "label_input": "Input: Jenis Luka, Alergi",
+      "deskripsi": "Perawatan luka steril metode modern dressing (luka pasca operasi, luka diabetes, luka kecelakaan). Wajib mengisi jenis luka dan riwayat alergi pasien.",
+      "img": "img/tindakan-rawat-luka.svg",
+      "alt": "Tindakan Rawat Luka Rahma Medika"
+    },
+    {
+      "id": 6,
+      "slug": "cek-tekanan-darah",
+      "path": "Path 6",
+      "nama": "Cek Tekanan Darah",
+      "asal": "Pemeriksaan Tanda Vital",
+      "kategori": "tanda-vital",
+      "harga": 15000,
+      "biaya_jasa": 10000,
+      "stok": 60,
+      "butuh_input": true,
+      "jenis_input": "tekanan_darah",
+      "label_input": "Input: Keluhan",
+      "deskripsi": "Pengukuran tekanan darah sistolik dan diastolik menggunakan tensimeter terkalibrasi disertai pencatatan keluhan klinis pasien.",
+      "img": "img/cek-tekanan-darah.svg",
+      "alt": "Cek Tekanan Darah Rahma Medika"
+    }
+  ]
+}
+

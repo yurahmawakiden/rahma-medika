@@ -1,0 +1,9 @@
+{
+    "name": "rahma-medika/umkm-flatfile-store",
+    "description": "Aplikasi Web Layanan Kesehatan & Medis Rahma Medika berbasis Flat-File JSON",
+    "type": "project",
+    "require": {
+        "setasign/fpdf": "^1.8"
+    }
+}
+

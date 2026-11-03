@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+  <defs>
+    <linearGradient id="kolBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <linearGradient id="dropKol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" rx="20" fill="url(#kolBg)"/>
+  <circle cx="160" cy="105" r="64" fill="#ffffff" opacity="0.85" stroke="#fde68a" stroke-width="4"/>
+  <!-- Tetes Darah Kolesterol -->
+  <path d="M160 48 C160 48 120 96 120 124 C120 146 138 162 160 162 C182 162 200 146 200 124 C200 96 160 48 160 48 Z" fill="url(#dropKol)" stroke="#b91c1c" stroke-width="3"/>
+  <!-- Partikel Lipid Kuning -->
+  <circle cx="148" cy="118" r="7" fill="#fde047"/>
+  <circle cx="172" cy="128" r="9" fill="#facc15"/>
+  <circle cx="155" cy="142" r="6" fill="#fef08a"/>
+  <text x="160" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#b45309">PATH 3 • CEK KOLESTEROL</text>
+</svg>
+

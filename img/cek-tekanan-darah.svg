@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+  <defs>
+    <linearGradient id="tensiBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" rx="20" fill="url(#tensiBg)"/>
+  <circle cx="160" cy="105" r="64" fill="#ffffff" opacity="0.88" stroke="#bae6fd" stroke-width="4"/>
+  <!-- Stetoskop -->
+  <path d="M132 64 L132 95 C132 114 166 114 166 95 L166 64" fill="none" stroke="#475569" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="132" cy="60" r="5" fill="#0284c7"/>
+  <circle cx="166" cy="60" r="5" fill="#0284c7"/>
+  <path d="M149 110 L149 138 C149 156 188 156 188 132 L188 112" fill="none" stroke="#0284c7" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="188" cy="104" r="14" fill="#bae6fd" stroke="#0369a1" stroke-width="4"/>
+  <circle cx="188" cy="104" r="5" fill="#0284c7"/>
+  <text x="160" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0369a1">PATH 6 • CEK TEKANAN DARAH</text>
+</svg>
+

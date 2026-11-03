@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+  <defs>
+    <linearGradient id="lukaBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3e8ff"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" rx="20" fill="url(#lukaBg)"/>
+  <circle cx="160" cy="105" r="64" fill="#ffffff" opacity="0.88" stroke="#fed7aa" stroke-width="4"/>
+  <!-- Plester Rawat Luka -->
+  <g transform="rotate(-32 160 105)">
+    <rect x="102" y="83" width="116" height="44" rx="22" fill="#fdba74" stroke="#ea580c" stroke-width="3"/>
+    <rect x="142" y="85" width="36" height="40" rx="6" fill="#ffedd5" stroke="#fb923c" stroke-width="2"/>
+    <circle cx="153" cy="98" r="2.5" fill="#ea580c"/>
+    <circle cx="167" cy="98" r="2.5" fill="#ea580c"/>
+    <circle cx="153" cy="112" r="2.5" fill="#ea580c"/>
+    <circle cx="167" cy="112" r="2.5" fill="#ea580c"/>
+  </g>
+  <text x="160" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c2410c">PATH 5 • TINDAKAN RAWAT LUKA</text>
+</svg>
+
